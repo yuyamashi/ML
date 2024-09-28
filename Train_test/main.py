@@ -107,7 +107,7 @@ def main(learner):
     print_result(rsl_keys)
     y_out = 1.0e+8
     
-    for epoch in range(30):
+    for epoch in range(50):
         lr = optimizer.param_groups[0]["lr"]
         train_acc, train_loss = train(device, optimizer, learner, train_data, loss_func)
         train_acc_list.append(train_acc)
